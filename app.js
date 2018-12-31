@@ -13,13 +13,13 @@ var okta = require("@okta/okta-sdk-nodejs");
 var ExpressOIDC = require("@okta/oidc-middleware").ExpressOIDC;
 var app = express();
 var oktaClient = new okta.Client({
-  orgUrl: 'https://dev-232123.oktapreview.com',
-  token: '00vRY9yDNURQrsAuAT0cNi-bnahUSU7IiUQvlIeong'
+  orgUrl: '{https://dev-232123.oktapreview.com}',
+  token: '{00vRY9yDNURQrsAuAT0cNi-bnahUSU7IiUQvlIeong}'
 });
 const oidc = new ExpressOIDC({
-  issuer: "https://dev-232123.oktapreview.com/oauth2/default",
-  client_id: '0oainwth6jjJuZMXu0h7',
-  client_secret: 'VXZVt1JHo9oeFdvYrRmy3TkdK0j-yBaCqcPsrjeU',
+  issuer: "{https://dev-232123.oktapreview.com}/oauth2/default",
+  client_id: '{0oainwth6jjJuZMXu0h7}',
+  client_secret: '{VXZVt1JHo9oeFdvYrRmy3TkdK0j-yBaCqcPsrjeU}',
   redirect_uri: 'http://localhost:3000/users/callback',
   scope: "openid profile",
   routes: {
