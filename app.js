@@ -20,7 +20,7 @@ const oidc = new ExpressOIDC({
   issuer: "http://dev-232123.oktapreview.com/oauth2/default",
   client_id: '0oainwth6jjJuZMXu0h7',
   client_secret: 'VXZVt1JHo9oeFdvYrRmy3TkdK0j-yBaCqcPsrjeU',
-  redirect_uri: 'http://localhost:3000/users/callback',
+  redirect_uri: 'http://localhost:3000/dashboard',
   scope: "openid profile",
   routes: {
     login: {
